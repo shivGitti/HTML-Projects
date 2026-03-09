@@ -45,7 +45,7 @@
             <legend>Accademic Details</legend>
             
             <p>Branch : 
-                <select name="branch" id="branch" required>
+            <select name="branch" required>
                 <option value="mech">Mechanical</option>
                 <option value="civil">Civil</option>
                 <option value="et">ET&T</option>
@@ -55,9 +55,34 @@
             </p>
 
             <label for="semester">Semester : </label>
-            <input type="number" max="8" min="1" step="1" required>
+            <input type="number" max="8" min="1" step="1" required id="semester">
 
         </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>About You</legend>
+            <textarea name="about" id="about" rows="8" cols="40" placeholder="Tell us about yourself..."></textarea>
+            <br><br>
+            <label for="photo">Upload Your Photo : </label>
+            <input type="file" name="pic" id="photo">
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+            
+            <input type="checkbox" id="terms">
+            <label for="terms">I agree to all <a href="#">Terms and Conditions.</a></label>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit Form</button>
+        <button type="reset">Clear Form</button>
 
     </form>
 
